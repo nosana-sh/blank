@@ -1,0 +1,21 @@
+global:
+  image: alpine:latest
+
+  trigger:
+    branch:
+      - "*"
+jobs:
+  - name: install deps
+    commands:
+      - env
+      - mkdir test
+      - touch test/test.md
+      - echo test > test/test.md
+    artifacts:
+      - name: test
+
+  - name: list
+    commands:
+      - ls -lah
+    resources:
+      - name: test
