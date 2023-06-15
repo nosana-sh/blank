@@ -1,6 +1,5 @@
 global:
   image: alpine:3.18
-
   trigger:
     branch:
       - "*"
