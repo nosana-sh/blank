@@ -16,5 +16,6 @@ jobs:
   - name: list
     commands:
       - ls -lah
+      - env
     resources:
       - name: test
