@@ -1,10 +1,10 @@
 global:
-  image: alpine:3.18
+  image: alpine:latest
   trigger:
     branch:
       - "*"
 jobs:
-  - name: install deps
+  - name: install
     commands:
       - env
       - mkdir test
