@@ -10,8 +10,12 @@ jobs:
       - mkdir test
       - touch test/test.md
       - echo test > test/test.md
+      - mkdir foo
+      - touch foo/bar.md
+      - echo foobar > foo/bar.md
     artifacts:
       - name: test
+      - name: foo
 
   - name: list
     commands:
@@ -19,3 +23,4 @@ jobs:
       - env
     resources:
       - name: test
+      - name: foo
