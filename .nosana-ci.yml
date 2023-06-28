@@ -20,6 +20,8 @@ jobs:
   - name: list
     commands:
       - ls -lah
+      - echo foo/bar.md
+      - echo test/test.md
       - env
     resources:
       - name: test
